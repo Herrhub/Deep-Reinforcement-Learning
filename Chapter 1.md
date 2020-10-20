@@ -1,4 +1,4 @@
-# 强化学习概述
+# Chapter 1 强化学习概述
 # 1.强化学习的基本结构是什么？
 答：本质上是智能体（Agent）和环境（Environment）间的交互。具体地，当Agent在Environment中得到当前时刻的状态（State），Agent会基于此状态输出一个动作（Action）。然后这个Action会加入到Environment中去并输出下一个State以及当前的这个Action得到的奖赏（Reward）。Agent在Environment里面存在的目的就是为了极大它的期望积累的Reward,通常可用马尔可夫决策过程（Markov Decision Process, MDP）来描述。
 # 2. 强化学习相对于监督学习为什么训练会更加困难？（强化学习的特征）
