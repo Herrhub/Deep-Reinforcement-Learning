@@ -1,5 +1,5 @@
 
-# Chapter 2 Markov Decidision Process
+# Chapter 2 Markov Decision Process
 
 ## 1. 为什么在马尔可夫奖励过程（MRP）中需要有discounted factor?
 答：
