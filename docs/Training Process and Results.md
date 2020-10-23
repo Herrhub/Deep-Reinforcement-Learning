@@ -14,5 +14,23 @@
 
 由于从起点到终点最少需要13步，每步得到-1的reward，因此最佳训练算法下，每个episode下reward总和应该为-13。
 
-## Training Process and Results
-训练并绘制reward以及滑动平均后的reward随episode的变化曲线图并记录超参数写成报告，图示如下
+## Training & Test Process and Results
+通过运行main.py进行500个episodes的训练Q-learning方法得到的rewards如下图：
+
+![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/docs/rewards.png)
+
+采用移动平均法使可视化rewards曲线更加平滑，易于更准确地体现训练过程。
+
+![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/docs/moving_average_rewards.png)
+
+另外，我们还可以看到训练过程中每个episode下走到终点所需steps的变化，可以看到最后能得到最优的13steps。
+
+![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/docs/steps.png)
+
+训练的模型超参数初始设置如下：
+### reward 的衰减率：0.9
+### e-greedy策略中初始epsilon：0.9
+### e-greedy策略中的结束epsilon：0.1
+### e-greedy策略中epsilon的衰减率：200
+### 学习率：0.1
+### 训练的最大episode数目：500
