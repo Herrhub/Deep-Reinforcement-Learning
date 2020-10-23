@@ -29,18 +29,3 @@ Sarsa 实际上都是用自己的策略产生了 S,A,R,S',A' 这一条轨迹。�
 答：Sarsa 就是一个典型的 on-policy 策略，它只用一个 π ，为了兼顾探索和利用，所以它训练的时候会显得有点胆小怕事。它在解决悬崖问题的时候，会尽可能地离悬崖边上远远的，确保说哪怕自己不小心探索了一点了，也还是在安全区域内不不至于跳进悬崖。
 Q-learning 是一个比较典型的 off-policy 的策略，它有目标策略 target policy，一般用 π 来表示。然后还有行为策略 behavior policy，用 μ 来表示。它分离了目标策略跟行为策略。Q-learning 就可以大胆地用 behavior policy 去探索得到的经验轨迹来去优化我的目标策略。这样子我更有可能去探索到最优的策略。
 比较 Q-learning 和 Sarsa 的更新公式可以发现，Sarsa 并没有选取最大值的 max 操作。因此，Q-learning 是一个非常激进的算法，希望每一步都获得最大的利益；而 Sarsa 则相对非常保守，会选择一条相对安全的迭代路线。
-
-## 6.Project 1 使用Q-learning解决悬崖寻路问题
-悬崖寻路问题（CliffWalking）是指在一个4 x 12的网格中，智能体以网格的左下角位置为起点，以网格的下角位置为终点，目标是移动智能体到达终点位置，智能体每次可以在上、下、左、右这4个方向中移动一步，每移动一步会得到-1单位的奖励。
-
-![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/docs/cliffwalking_1.png)
-
-如图，红色部分表示悬崖，数字代表智能体能够观测到的位置信息，即observation，总共会有0-47等48个不同的值，智能体再移动中会有以下限制：
-智能体不能移出网格，如果智能体想执行某个动作移出网格，那么这一步智能体不会移动，但是这个操作依然会得到-1单位的奖励；如果智能体“掉入悬崖” ，会立即回到起点位置，并得到-100单位的奖励；当智能体移动到终点时，该回合结束，该回合总奖励为各步奖励之和。
-实际的仿真界面如下:
-
-![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/docs/cliffwalking_2.png)
-
-由于从起点到终点最少需要13步，每步得到-1的reward，因此最佳训练算法下，每个episode下reward总和应该为-13。
-
-训练并绘制reward以及滑动平均后的reward随episode的变化曲线图并记录超参数写成报告，图示如下
