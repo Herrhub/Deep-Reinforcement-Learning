@@ -1,6 +1,6 @@
 
 # Chapter_6 Q-learning(Basic Concepts)
-#第六章 Q学习（基本概念）
+# 第六章 Q学习（基本概念）
 ##  State Value Function
 ##  State Value Function Estimation
 ##  State-action Value Function
