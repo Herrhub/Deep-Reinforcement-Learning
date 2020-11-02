@@ -1,5 +1,5 @@
-# Chapter_7 Q-learning-Double DQN
-
+# Chapter_7 Q-learning-Double DQN（Advanced Skills)
+# 第七章 Q Learning Double DQN（进阶技巧）
 
 ## 1 Keywords
 ### Double DQN：
