@@ -21,14 +21,16 @@
 
 ![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/Project3/rewards_train.png)
 
-![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/Project3/move_average_rewards_train.png)
+![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/Project3/moving_average_rewards_train.png)
 
 ![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/Project3/steps_train.png)
 
+
 同时也可以绘制测试(eval)模型时的曲线：
+
 
 ![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/Project3/rewards_eval.png)
 
-![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/Project3/move_average_rewards_eval.png)
+![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/Project3/moving_average_rewards_eval.png)
 
 ![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/Project3/steps_eval.png)
