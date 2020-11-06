@@ -2,7 +2,7 @@
 
 ## Pendulum-v0
 
-![]()
+![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/Project3/image-20200820174814084.png)
 
 钟摆以随机位置开始，目标是将其摆动，使其保持向上直立。动作空间是连续的，值的区间为[-2,2]。每个step给的reward最低为-16.27，最高为0。
 
@@ -18,3 +18,17 @@
   
 ## 任务要求
 训练并绘制reward以及滑动平均后的reward随episode的变化曲线图并记录超参数写成报告，图示如下：
+
+![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/Project3/rewards_train.png)
+
+![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/Project3/move_average_rewards_train.png)
+
+![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/Project3/steps_train.png)
+
+同时也可以绘制测试(eval)模型时的曲线：
+
+![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/Project3/rewards_eval.png)
+
+![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/Project3/move_average_rewards_eval.png)
+
+![](https://github.com/Herrhub/Deep-Reinforcement-Learning/blob/main/Project3/steps_eval.png)
